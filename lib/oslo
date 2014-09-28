@@ -36,7 +36,7 @@ TASKFLOW_DIR=$DEST/taskflow
 function install_oslo {
     # TODO(sdague): remove this once we get to Icehouse, this just makes
     # for a smoother transition of existing users.
-    cleanup_oslo
+    #cleanup_oslo
 
     git_clone $CLIFF_REPO $CLIFF_DIR $CLIFF_BRANCH
     setup_develop $CLIFF_DIR
