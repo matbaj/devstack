@@ -61,6 +61,7 @@ function install_oslo {
 
     git_clone $TASKFLOW_REPO $TASKFLOW_DIR $TASKFLOW_BRANCH
     setup_develop $TASKFLOW_DIR
+    sudo ln -s /opt/stack/oslo.config/oslo/config/ /usr/local/lib/python2.7/dist-packages/oslo/config
 }
 
 # cleanup_oslo() - purge possibly old versions of oslo
